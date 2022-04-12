@@ -3,7 +3,7 @@ function getPrices() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
   // Start at row 1, end at the last row of the spreadsheet
-  for(var n = 1; n < sheet.getLastRow(); n = n + 5) {
+  for (var n = 1; n < sheet.getLastRow(); n = n + 5) {
     // Get crypto ticker value in column A
     var value = sheet.getRange(n, 1).getValue();
     // Call API with ticker to retrieve price
